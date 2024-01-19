@@ -16,8 +16,7 @@ int main()
 			int numero;
 			cin >> numero;
 			int prueba = 0;
-
-			if (numero >= 0) {
+			if (numero > 0) {
 				if (numero % 3 == 0 && numero % 5 == 0) {
 					cout << "Viva Programar" << endl;
 				}
@@ -37,16 +36,13 @@ int main()
 		}
 			  break;
 		case 2: {
-
 			cout << "Ingrese un numero" << endl;
 			int sumatoria;
 			cin >> sumatoria;
-
 			double arriba = 0.00;
 			double abajo = 0.00;
 			double respuesta = 0.00;
 			int contador = 1;
-
 			if (sumatoria > 0) {
 				while (contador < sumatoria) {
 					arriba += (2 * contador) - 1;
@@ -54,7 +50,6 @@ int main()
 					abajo += contador * 1;
 					respuesta += arriba / abajo;
 					contador++;
-
 				}
 				cout << "La sumatoria desde 1 hasta " << sumatoria << " Es: " << respuesta << endl;
 			}
@@ -67,16 +62,10 @@ int main()
 			seguir = false;
 		}
 			  break;
-
-
-
+		default: {
+			cout << "Ingrese una opcion correcta" << endl;
 		}
-
-
+			   break;
+		}
 	}
-
-
-
-
 }
-
